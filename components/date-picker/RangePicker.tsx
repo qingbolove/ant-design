@@ -215,8 +215,12 @@ export default class RangePicker extends React.Component<any, RangePickerState> 
 
   getComparedValueFromOption = (optionValue: string, value?: RangePickerValue) =>{
     var preValue;
-    if(!value)
+    if(!value) {
       preValue = this.state && this.state.value? this.state.value: this.props.value || this.props.defaultValue;
+    }
+    else {
+      preValue = value;
+    }
     var dataRange = moment(preValue[1]).diff(moment(preValue[0]), 'days');
     var comparedSelectedValue = [moment(preValue[0]), moment(preValue[1])];
     var options = this.props.comparedOptions;
@@ -242,7 +246,7 @@ export default class RangePicker extends React.Component<any, RangePickerState> 
       this.setState({comparedSelectedValue: comparedSelectedValue, comparedOption: optionValue});
   }
 
-  onSelect() {
+  onSelect = () => {
     this.setState({footerOption: ''});
   }
   
