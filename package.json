@@ -51,7 +51,7 @@
     "omit.js": "^1.0.0",
     "prop-types": "^15.5.7",
     "rc-animate": "^2.4.1",
-    "rc-calendar": "https://github.com/qingbolove/calendar/tarball/5571f90c375413e0a9510251abde4ad264802e78",
+    "rc-calendar": "https://github.com/qingbolove/calendar/tarball/c97082d4e50a77820a2cf858443e4402b906f8ce",
     "rc-cascader": "~0.12.0",
     "rc-checkbox": "~2.1.5",
     "rc-collapse": "~1.8.0",
